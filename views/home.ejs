@@ -5,11 +5,11 @@
     </div>
     <% for( let index=1; index < Posts.length; index++ ) { %>
         <h1>
-            <%= Posts[index].heading %>
+            <%= Posts[index].title%>
         </h1>
         <div>
             <%= Posts[index].content.substring(0, 100)+"..." %>
-                <a href="/posts/<%= Posts[index].heading %>">Read More</a>
+                <a href="/posts/<%= Posts[index]._id %>">Read More</a>
         </div>
         <% } %>
             <br>
